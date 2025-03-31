@@ -1,10 +1,9 @@
 #pragma once
 
-#include <iostream>
 #include <string>
 #include <SDL.h>
 
-class State; // Forward declaration
+class State;
 
 class Game {
 public:

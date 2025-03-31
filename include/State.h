@@ -1,7 +1,7 @@
 #pragma once
 
-//#include "../include/Sprite.h"
-//#include "../include/Music.h"
+#include "../include/Sprite.h"
+#include "../include/Music.h"
 
 class State {
 public:
@@ -12,7 +12,7 @@ public:
     void Render();
 
 private:
-    //Sprite bg;
-    //Music music;
+    Sprite bg;
+    Music music;
     bool quitRequested;
 };

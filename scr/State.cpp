@@ -1,8 +1,11 @@
 #include "SDL.h"
 #include "../include/State.h"
+#include <filesystem>
+#include <iostream>
 
-State::State() : quitRequested(false) /*, bg() */ {
+State::State() : quitRequested(false), bg("../Recursos/img/Background.png"), music("../Recursos/audio/BGM.wav") {
     // Inicialização do estado
+	music.Play();
 }
 
 bool State::QuitRequested() {
@@ -22,5 +25,5 @@ void State::Update(float dt) {
 
 void State::Render() {
     // Renderizar o estado (bg e outros elementos)
-    // bg.Render(0, 0);
+    bg.Render(0, 0);
 }

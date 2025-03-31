@@ -132,10 +132,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="scr\Game.cpp" />
+    <ClCompile Include="scr\Main.cpp" />
+    <ClCompile Include="scr\Music.cpp" />
+    <ClCompile Include="scr\Sprite.cpp" />
     <ClCompile Include="scr\State.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\Music.h" />
+    <ClInclude Include="include\Sprite.h" />
     <ClInclude Include="include\State.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
